@@ -1,0 +1,122 @@
+.section {
+  background-color: var(--bg-surface-alt);
+  overflow: hidden;
+}
+
+/* Carousel wrapper — relative for arrow buttons */
+.carouselWrapper {
+  position: relative;
+}
+
+/* Arrow buttons */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+  color: var(--text-primary);
+  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.arrow:hover {
+  background-color: var(--color-brand-primary);
+  color: var(--text-on-brand);
+  box-shadow: var(--shadow-hover);
+}
+
+.arrowLeft  { left: -16px; }
+.arrowRight { right: -16px; }
+
+/* Scroll track */
+.track {
+  display: flex;
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: var(--space-4) var(--space-2);
+  /* Hide scrollbar visually — still scrollable */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.track::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual gallery item */
+.item {
+  flex-shrink: 0;
+  width: 320px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  position: relative;
+  scroll-snap-align: start;
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+}
+
+.item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.item:hover img {
+  transform: scale(1.04);
+}
+
+/* Caption overlay */
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  color: #ffffff;
+  transform: translateY(4px);
+  opacity: 0;
+  transition: opacity var(--transition-base), transform var(--transition-base);
+}
+
+.item:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.captionText {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: #ffffff;
+}
+
+.captionProject {
+  font-size: var(--font-size-xs);
+  color: var(--color-brand-secondary);
+  margin-top: var(--space-1);
+}
+
+@media (max-width: 768px) {
+  .arrowLeft,
+  .arrowRight {
+    display: none;
+  }
+
+  .item {
+    width: 260px;
+  }
+}

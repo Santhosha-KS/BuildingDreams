@@ -1,0 +1,33 @@
+{
+  "sections": [
+    {
+      "heading": "Company",
+      "links": [
+        { "label": "About Us",      "route": "/#about" },
+        { "label": "Our Projects",  "route": "/#gallery" },
+        { "label": "Awards",        "route": "/#awards" },
+        { "label": "Careers",       "route": "/careers" }
+      ]
+    },
+    {
+      "heading": "Services",
+      "links": [
+        { "label": "Our Homes",       "route": "/our-homes" },
+        { "label": "Packages",        "route": "/packages" },
+        { "label": "How It Works",    "route": "/how-it-works" },
+        { "label": "Get Consultation", "route": "/get-consultation" }
+      ]
+    },
+    {
+      "heading": "Legal",
+      "links": [
+        { "label": "Privacy Policy",  "route": "/privacy" },
+        { "label": "Terms of Use",    "route": "/terms" },
+        { "label": "RERA Details",    "route": "/rera" }
+      ]
+    }
+  ],
+  "copyrightYear": 2025,
+  "developerCredit": "Developed by Santhosha KS",
+  "companyTagline": "Building Dreams, Crafting Legacies"
+}

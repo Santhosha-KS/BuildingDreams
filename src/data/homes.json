@@ -1,0 +1,97 @@
+[
+  {
+    "id": "home-1",
+    "name": "The Verdant Villa",
+    "imagePath": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?w=600&q=80",
+    "description": "A premium villa nestled in lush greenery, featuring contemporary architecture with spacious interiors and a private pool.",
+    "specs": [
+      { "label": "Type", "value": "4 BHK Villa" },
+      { "label": "Plot Area", "value": "2400 sq ft" },
+      { "label": "Built-up Area", "value": "3600 sq ft" },
+      { "label": "Floors", "value": "G + 2" },
+      { "label": "Parking", "value": "2 Cars" },
+       { "label": "Amenities", "value": "Swimming pool" }
+    ],
+    "priceFrom": 18000000,
+    "status": "available",
+    "tag": "Most Popular"
+  },
+  {
+    "id": "home-2",
+    "name": "Serene Heights",
+    "imagePath": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80",
+    "description": "An elegant bungalow designed for families who value open spaces, natural light, and modern living.",
+    "specs": [
+      { "label": "Type", "value": "3 BHK Bungalow" },
+      { "label": "Plot Area", "value": "1800 sq ft" },
+      { "label": "Built-up Area", "value": "2400 sq ft" },
+      { "label": "Floors", "value": "G + 1" },
+      { "label": "Parking", "value": "2 Cars" }
+    ],
+    "priceFrom": 9500000,
+    "priceTo": 11000000,
+    "status": "available"
+  },
+  {
+    "id": "home-3",
+    "name": "Urban Nest",
+    "imagePath": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80",
+    "description": "A smart, compact home designed for urban professionals. Maximised functionality with premium finishes.",
+    "specs": [
+      { "label": "Type", "value": "2 BHK" },
+      { "label": "Plot Area", "value": "1000 sq ft" },
+      { "label": "Built-up Area", "value": "1200 sq ft" },
+      { "label": "Floors", "value": "Single Floor" },
+      { "label": "Parking", "value": "1 Car" }
+    ],
+    "priceFrom": 5500000,
+    "status": "available"
+  },
+  {
+    "id": "home-4",
+    "name": "Heritage Duplex",
+    "imagePath": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=600&q=80",
+    "description": "A classic duplex that blends traditional architectural cues with modern interiors, perfect for multi-generational families.",
+    "specs": [
+      { "label": "Type", "value": "4 BHK Duplex" },
+      { "label": "Plot Area", "value": "2000 sq ft" },
+      { "label": "Built-up Area", "value": "2800 sq ft" },
+      { "label": "Floors", "value": "G + 1" },
+      { "label": "Parking", "value": "2 Cars" }
+    ],
+    "priceFrom": 12000000,
+    "status": "sold-out",
+    "tag": "Sold Out"
+  },
+  {
+    "id": "home-5",
+    "name": "Sky Terraces",
+    "imagePath": "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600&q=80",
+    "description": "An upcoming premium residential complex offering sky-facing terraces and breathtaking city views. Pre-launch booking open.",
+    "specs": [
+      { "label": "Type", "value": "3 & 4 BHK" },
+      { "label": "Built-up Area", "value": "1800–3200 sq ft" },
+      { "label": "Floors", "value": "G + 15" },
+      { "label": "Amenities", "value": "Club, Pool, Gym" },
+      { "label": "Possession", "value": "Dec 2026" }
+    ],
+    "priceFrom": 13500000,
+    "status": "coming-soon",
+    "tag": "New Launch"
+  },
+  {
+    "id": "home-6",
+    "name": "Green Meadows",
+    "imagePath": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80",
+    "description": "A nature-immersed villa community with large garden plots, rainwater harvesting, and solar power integration.",
+    "specs": [
+      { "label": "Type", "value": "3 BHK Villa" },
+      { "label": "Plot Area", "value": "2200 sq ft" },
+      { "label": "Built-up Area", "value": "2600 sq ft" },
+      { "label": "Floors", "value": "G + 1" },
+      { "label": "Eco Features", "value": "Solar + Rainwater" }
+    ],
+    "priceFrom": 10500000,
+    "status": "available"
+  }
+]

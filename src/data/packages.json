@@ -1,0 +1,71 @@
+[
+  {
+    "id": "pkg-basic",
+    "tier": "basic",
+    "name": "Essential Build",
+    "description": "Everything you need to build a solid, quality home on a focused budget. Ideal for first-time builders.",
+    "pricePerSqft": 1800,
+    "isHighlighted": false,
+    "ctaText": "Get Started",
+    "features": [
+      { "label": "Structural Design & Planning", "included": true },
+      { "label": "Quality Cement & Steel", "included": true },
+      { "label": "Basic Flooring (Vitrified Tiles)", "included": true },
+      { "label": "Standard Electrical Wiring", "included": true },
+      { "label": "Standard Plumbing", "included": true },
+      { "label": "Exterior Paint (1 Coat)", "included": true },
+      { "label": "Modular Kitchen", "included": false },
+      { "label": "Premium Bathroom Fittings", "included": false },
+      { "label": "Landscaping & Garden", "included": false },
+      { "label": "Smart Home Features", "included": false },
+      { "label": "Solar Power Integration", "included": false },
+      { "label": "Dedicated Project Manager", "included": false }
+    ]
+  },
+  {
+    "id": "pkg-standard",
+    "tier": "standard",
+    "name": "Standard Build",
+    "description": "Our most popular package. Balances quality, aesthetics, and value. Includes premium finishes and a dedicated manager.",
+    "pricePerSqft": 2500,
+    "isHighlighted": true,
+    "ctaText": "Choose Standard",
+    "features": [
+      { "label": "Structural Design & Planning", "included": true },
+      { "label": "Quality Cement & Steel", "included": true },
+      { "label": "Premium Flooring (Marble/Granite)", "included": true },
+      { "label": "Concealed Electrical Wiring", "included": true },
+      { "label": "CPVC Plumbing", "included": true },
+      { "label": "Exterior Paint (2 Coats + Texture)", "included": true },
+      { "label": "Modular Kitchen", "included": true },
+      { "label": "Premium Bathroom Fittings", "included": true },
+      { "label": "Landscaping & Garden", "included": false },
+      { "label": "Smart Home Features", "included": false },
+      { "label": "Solar Power Integration", "included": false },
+      { "label": "Dedicated Project Manager", "included": true }
+    ]
+  },
+  {
+    "id": "pkg-premium",
+    "tier": "premium",
+    "name": "Luxury Build",
+    "description": "Uncompromising excellence. Every detail crafted to perfection—from smart home systems to lush landscaping.",
+    "pricePerSqft": 3800,
+    "isHighlighted": false,
+    "ctaText": "Go Premium",
+    "features": [
+      { "label": "Structural Design & Planning", "included": true },
+      { "label": "Premium Cement & TMT Steel", "included": true },
+      { "label": "Luxury Flooring (Italian Marble)", "included": true },
+      { "label": "Concealed + Home Automation Wiring", "included": true },
+      { "label": "Premium CPVC + Rain Shower", "included": true },
+      { "label": "Exterior Paint (3 Coats + Designer Finish)", "included": true },
+      { "label": "Fully Fitted Modular Kitchen", "included": true },
+      { "label": "Luxury Bathroom Fittings (Kohler/Grohe)", "included": true },
+      { "label": "Landscaping & Garden", "included": true },
+      { "label": "Smart Home Features", "included": true },
+      { "label": "Solar Power Integration", "included": true },
+      { "label": "Dedicated Project Manager", "included": true }
+    ]
+  }
+]

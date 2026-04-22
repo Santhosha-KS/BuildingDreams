@@ -1,0 +1,23 @@
+[
+  {
+    "id": "stat-completed",
+    "label": "Completed Projects",
+    "count": 15,
+    "color": "green",
+    "accentCssVar": "--color-success"
+  },
+  {
+    "id": "stat-ongoing",
+    "label": "Ongoing Projects",
+    "count": 4,
+    "color": "Blue",
+    "accentCssVar": "--color-warning"
+  },
+  {
+    "id": "stat-pipeline",
+    "label": "In Discussion / Pipeline",
+    "count": 5,
+    "color": "yellow",
+    "accentCssVar": "--color-pending"
+  }
+]

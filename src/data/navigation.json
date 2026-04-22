@@ -1,0 +1,22 @@
+[
+  {
+    "id": "nav-homes",
+    "label": "Our Homes",
+    "route": "/our-homes"
+  },
+  {
+    "id": "nav-packages",
+    "label": "Packages",
+    "route": "/packages"
+  },
+  {
+    "id": "nav-how",
+    "label": "How It Works",
+    "route": "/how-it-works"
+  },
+  {
+    "id": "nav-consultation",
+    "label": "Get Consultation",
+    "route": "/get-consultation"
+  }
+]

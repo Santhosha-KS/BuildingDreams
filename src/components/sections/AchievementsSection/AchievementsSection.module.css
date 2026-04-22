@@ -1,0 +1,95 @@
+.section {
+  background-color: var(--color-brand-primary);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+  justify-content: center;
+}
+
+.statItem {
+  flex: 1 1 150px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-8) var(--space-6);
+  position: relative;
+}
+
+/* Divider between stats (not after last) */
+.statItem:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.value {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-extrabold);
+  color: #ffffff;
+  line-height: 1;
+  margin-bottom: var(--space-2);
+}
+
+.suffix {
+  color: var(--color-brand-secondary);
+}
+
+.label {
+  font-size: var(--font-size-sm);
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+}
+
+/* Animate value when visible — class added by IntersectionObserver */
+.statItem.visible .value {
+  animation: countUp 1.2s ease-out both;
+}
+
+@keyframes countUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Also remove the SectionHeading white-on-green issue */
+.section :global(.section) {
+  padding-top: var(--space-16);
+  padding-bottom: var(--space-12);
+}
+
+@media (max-width: 768px) {
+  .statItem {
+    flex: 1 1 40%;
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .statItem:not(:last-child)::after {
+    display: none;
+  }
+
+  .value {
+    font-size: var(--font-size-4xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .statItem {
+    flex: 1 1 45%;
+  }
+}

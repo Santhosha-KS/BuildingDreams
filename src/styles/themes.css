@@ -1,0 +1,30 @@
+/* ============================================================
+   THEMES — Apply .theme-dark on <html> to activate dark mode.
+   Only overrides variables; no layout or structure changes.
+   All components reference these vars — no component edits needed.
+   ============================================================ */
+
+.theme-dark {
+  /* Backgrounds */
+  --bg-page:             #0e1a14;
+  --bg-surface:          #16261c;
+  --bg-surface-alt:      #1f3328;
+  --bg-overlay:          rgba(0, 0, 0, 0.70);
+
+  /* Text */
+  --text-primary:        #e8f0eb;
+  --text-secondary:      #a8c0ae;
+  --text-muted:          #6a8a72;
+
+  /* Borders */
+  --border-color:        #2a4234;
+
+  /* Shadows — heavier in dark mode so elevation is still readable */
+  --shadow-sm:           0 1px 3px rgba(0, 0, 0, 0.30);
+  --shadow-md:           0 4px 12px rgba(0, 0, 0, 0.35);
+  --shadow-lg:           0 8px 32px rgba(0, 0, 0, 0.40);
+  --shadow-hover:        0 8px 24px rgba(26, 76, 46, 0.40);
+
+  /* Brand accent tint — darker green for dark backgrounds */
+  --color-brand-accent:  #1a3d26;
+}

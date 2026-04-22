@@ -1,0 +1,74 @@
+[
+  {
+    "id": "f1",
+    "name": "fullName",
+    "label": "Full Name",
+    "type": "text",
+    "placeholder": "Enter your full name",
+    "required": true,
+    "validation": {
+      "minLength": 2,
+      "maxLength": 100
+    }
+  },
+  {
+    "id": "f2",
+    "name": "email",
+    "label": "Email Address",
+    "type": "email",
+    "placeholder": "you@example.com",
+    "required": true
+  },
+  {
+    "id": "f3",
+    "name": "phone",
+    "label": "Phone Number",
+    "type": "tel",
+    "placeholder": "+91-XXXXX-XXXXX",
+    "required": true,
+    "validation": {
+      "pattern": "^[+]?[0-9]{10,13}$",
+      "patternMessage": "Please enter a valid phone number"
+    }
+  },
+  {
+    "id": "f4",
+    "name": "city",
+    "label": "Your City",
+    "type": "text",
+    "placeholder": "e.g. Bengaluru",
+    "required": true
+  },
+  {
+    "id": "f5",
+    "name": "projectType",
+    "label": "Project Type",
+    "type": "select",
+    "required": true,
+    "options": [
+      { "value": "", "label": "Select project type" },
+      { "value": "new-home", "label": "New Home Construction" },
+      { "value": "villa", "label": "Villa / Bungalow" },
+      { "value": "renovation", "label": "Renovation / Remodelling" },
+      { "value": "commercial", "label": "Commercial Space" },
+      { "value": "other", "label": "Other" }
+    ]
+  },
+  {
+    "id": "f6",
+    "name": "budget",
+    "label": "Approximate Budget",
+    "type": "text",
+    "placeholder": "e.g. ₹50 Lakhs – ₹1 Crore",
+    "required": false
+  },
+  {
+    "id": "f7",
+    "name": "message",
+    "label": "Tell Us More",
+    "type": "textarea",
+    "placeholder": "Share your requirements, plot details, preferred timeline, or any questions…",
+    "required": false,
+    "rows": 5
+  }
+]

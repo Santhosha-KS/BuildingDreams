@@ -1,0 +1,44 @@
+[
+  {
+    "id": "step-1",
+    "stepNumber": 1,
+    "title": "Initial Consultation",
+    "description": "We begin with a free consultation to understand your vision, requirements, plot details, and budget. Our experts guide you through the possibilities.",
+    "duration": "1–2 days"
+  },
+  {
+    "id": "step-2",
+    "stepNumber": 2,
+    "title": "Design & Planning",
+    "description": "Our architects create detailed floor plans, 3D renders, and elevations. We iterate until every detail matches your dream. All government approvals and permits are handled by us.",
+    "duration": "2–4 weeks"
+  },
+  {
+    "id": "step-3",
+    "stepNumber": 3,
+    "title": "Material Selection",
+    "description": "Choose from our curated catalogue of tiles, fittings, paints, and finishes—or bring your own inspiration. We source premium materials at competitive prices.",
+    "duration": "1 week"
+  },
+  {
+    "id": "step-4",
+    "stepNumber": 4,
+    "title": "Construction Begins",
+    "description": "Your dedicated project manager oversees every stage—foundation, structure, plumbing, electrical—with weekly progress reports and site access for you.",
+    "duration": "6–18 months"
+  },
+  {
+    "id": "step-5",
+    "stepNumber": 5,
+    "title": "Quality Inspection",
+    "description": "Before handover, our quality team conducts a rigorous 100-point inspection. Any snags are resolved before you receive the keys.",
+    "duration": "2–4 days"
+  },
+  {
+    "id": "step-6",
+    "stepNumber": 6,
+    "title": "Handover & After-Sales",
+    "description": "We hand over your home with full documentation. Our after-sales team provides 2-year structural warranty and ongoing maintenance support.",
+    "duration": "1 day + ongoing"
+  }
+]

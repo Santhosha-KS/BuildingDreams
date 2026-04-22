@@ -1,0 +1,37 @@
+[
+  {
+    "id": "award-1",
+    "title": "Best Residential Developer",
+    "year": 2023,
+    "issuedBy": "Karnataka Real Estate Awards",
+    "description": "Recognised for outstanding quality and timely delivery in residential construction."
+  },
+  {
+    "id": "award-2",
+    "title": "Green Building Excellence",
+    "year": 2022,
+    "issuedBy": "India Green Building Council",
+    "description": "Awarded for sustainable construction practices and eco-friendly material usage."
+  },
+  {
+    "id": "award-3",
+    "title": "Customer Satisfaction Award",
+    "year": 2023,
+    "issuedBy": "CREDAI Bengaluru",
+    "description": "Voted best developer by homebuyers for transparency and after-sales support."
+  },
+  {
+    "id": "award-4",
+    "title": "Innovation in Design",
+    "year": 2021,
+    "issuedBy": "South India Property Summit",
+    "description": "Honoured for bringing contemporary architectural design to affordable housing."
+  },
+  {
+    "id": "award-5",
+    "title": "Fastest Growing Developer",
+    "year": 2022,
+    "issuedBy": "Business Today Real Estate",
+    "description": "Ranked among the top 10 fastest-growing real estate developers in South India."
+  }
+]

@@ -1,0 +1,136 @@
+.page {
+  padding: var(--space-16) 0;
+  background-color: var(--bg-page);
+  min-height: 60vh;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+  justify-content: center;
+}
+
+@media (max-width: 576px) {
+  .grid {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+/* ── Home Card ──────────────────────────────────────────── */
+.card {
+  flex: 1 1 320px;
+  max-width: 400px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition-base), transform var(--transition-base);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-3px);
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform var(--transition-slow);
+}
+
+.card:hover .image {
+  transform: scale(1.04);
+}
+
+.badgeWrapper {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+}
+
+.cardBody {
+  padding: var(--space-5);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.cardDesc {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-base);
+}
+
+/* Specs list */
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--text-secondary);
+  background-color: var(--bg-surface-alt);
+  border-radius: var(--border-radius-sm);
+  padding: var(--space-1) var(--space-2);
+}
+
+.specLabel {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-primary);
+}
+
+/* Price + CTA row */
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  border-top: 1px solid var(--border-color);
+  margin-top: auto;
+}
+
+.price {
+  display: flex;
+  flex-direction: column;
+}
+
+.priceLabel {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.priceValue {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+}

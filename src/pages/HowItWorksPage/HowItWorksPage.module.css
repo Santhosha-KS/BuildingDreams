@@ -1,0 +1,117 @@
+.page {
+  padding: var(--space-16) 0;
+  background-color: var(--bg-page);
+  min-height: 60vh;
+}
+
+.timeline {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+/* Vertical connector line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 28px;
+  top: 28px;
+  bottom: 28px;
+  width: 2px;
+  background: linear-gradient(
+    to bottom,
+    var(--color-brand-primary) 0%,
+    var(--color-brand-secondary) 100%
+  );
+  z-index: 0;
+}
+
+/* ── Step ─────────────────────────────────────────────────── */
+.step {
+  display: flex;
+  gap: var(--space-6);
+  padding: 0 0 var(--space-10);
+  position: relative;
+}
+
+.step:last-child {
+  padding-bottom: 0;
+}
+
+/* Step number circle */
+.circle {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--color-brand-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-extrabold);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 0 4px var(--color-brand-accent);
+  transition: background-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.step:hover .circle {
+  background-color: var(--color-brand-secondary);
+  box-shadow: 0 0 0 6px rgba(200, 146, 42, 0.15);
+}
+
+/* Step content */
+.content {
+  flex: 1;
+  padding-top: var(--space-3);
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.stepTitle {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-primary);
+}
+
+.duration {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand-secondary);
+  background-color: rgba(200, 146, 42, 0.10);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--border-radius-pill);
+}
+
+.stepDesc {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: var(--line-height-loose);
+}
+
+@media (max-width: 576px) {
+  .timeline::before {
+    left: 22px;
+  }
+
+  .circle {
+    width: 44px;
+    height: 44px;
+    font-size: var(--font-size-base);
+  }
+
+  .stepTitle {
+    font-size: var(--font-size-lg);
+  }
+}

@@ -1,0 +1,70 @@
+.wrapper {
+  text-align: center;
+  margin-bottom: var(--space-12);
+}
+
+.wrapper.left {
+  text-align: left;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brand-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-primary);
+  line-height: var(--line-height-tight);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin: 0 auto;
+  line-height: var(--line-height-loose);
+}
+
+.wrapper.left .subtitle {
+  margin-left: 0;
+}
+
+/* Decorative underline bar */
+.bar {
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--color-brand-primary), var(--color-brand-secondary));
+  border-radius: var(--border-radius-pill);
+  margin: var(--space-4) auto 0;
+}
+
+.wrapper.left .bar {
+  margin-left: 0;
+}
+
+/* Inverted variant — for use on dark/coloured backgrounds */
+.wrapper.inverted .title {
+  color: #ffffff;
+}
+
+.wrapper.inverted .subtitle {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.wrapper.inverted .bar {
+  background: linear-gradient(90deg, rgba(255,255,255,0.6), var(--color-brand-secondary));
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+}

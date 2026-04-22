@@ -1,0 +1,109 @@
+/* ============================================================
+   GLOBAL STYLES — Reset, base typography, scroll behaviour.
+   Import order in main.tsx:
+     1. variables.css  (tokens)
+     2. themes.css     (dark overrides)
+     3. global.css     (this file — base styles)
+     4. utilities.css  (helpers)
+     5. animations.css (keyframes)
+   ============================================================ */
+
+/* ── Box-sizing reset ─────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── HTML / Body ──────────────────────────────────────────── */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-base);
+  color: var(--text-primary);
+  background-color: var(--bg-page);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Typography ───────────────────────────────────────────── */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-primary);
+}
+
+h1 { font-size: var(--font-size-5xl); }
+h2 { font-size: var(--font-size-4xl); }
+h3 { font-size: var(--font-size-3xl); }
+h4 { font-size: var(--font-size-2xl); }
+h5 { font-size: var(--font-size-xl); }
+h6 { font-size: var(--font-size-lg); }
+
+p {
+  color: var(--text-secondary);
+  line-height: var(--line-height-loose);
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+a {
+  color: var(--color-brand-primary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-brand-secondary);
+}
+
+/* ── Images ───────────────────────────────────────────────── */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+/* ── Lists ────────────────────────────────────────────────── */
+ul, ol {
+  list-style: none;
+}
+
+/* ── Focus outline for keyboard navigation ─────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 3px;
+  border-radius: var(--border-radius-sm);
+}
+
+/* ── Custom scrollbar (Webkit browsers) ───────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-surface-alt);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-primary);
+  border-radius: var(--border-radius-pill);
+}

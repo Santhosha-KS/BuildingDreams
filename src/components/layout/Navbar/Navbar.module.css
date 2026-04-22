@@ -1,0 +1,244 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: var(--navbar-height);
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  z-index: var(--z-navbar);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding-x);
+}
+
+/* ── Logo ─────────────────────────────────────────────────── */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.logoMark {
+  width: 42px;
+  height: 42px;
+  background-color: var(--color-brand-primary);
+  color: var(--text-on-brand);
+  border-radius: var(--border-radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-extrabold);
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+}
+
+.logoName {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+  line-height: 1.2;
+}
+
+.logoTagline {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  line-height: 1;
+}
+
+/* ── Desktop nav links ────────────────────────────────────── */
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  list-style: none;
+}
+
+.navLink {
+  display: block;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  color: var(--color-brand-primary);
+  background-color: var(--color-brand-accent);
+}
+
+/* active state — applied by React Router NavLink */
+.navLink.active {
+  color: var(--color-brand-primary);
+  font-weight: var(--font-weight-semibold);
+  background-color: var(--color-brand-accent);
+}
+
+/* CTA nav item styles differently */
+.navCta {
+  margin-left: var(--space-4);
+}
+
+/* ── Right-side action group (theme toggle + CTA + hamburger) ─
+   Uses its own class so it is NEVER hidden — the media query
+   only hides the <ul> desktop link list (.navLinks), not this. */
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+/* ── Theme toggle ─────────────────────────────────────────── */
+.themeToggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--border-radius-pill);
+  border: 1px solid var(--border-color);
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  font-size: var(--font-size-base);
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+  margin-left: var(--space-2);
+}
+
+.themeToggle:hover {
+  background-color: var(--bg-surface-alt);
+  color: var(--text-primary);
+}
+
+/* ── Mobile hamburger ─────────────────────────────────────── */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-2);
+  border-radius: var(--border-radius-md);
+  transition: background-color var(--transition-fast);
+}
+
+.hamburger:hover {
+  background-color: var(--bg-surface-alt);
+}
+
+.hamburgerLine {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: var(--text-primary);
+  border-radius: var(--border-radius-pill);
+  transition: transform var(--transition-base), opacity var(--transition-base);
+}
+
+/* Hamburger "X" animation when open */
+.hamburger.open .hamburgerLine:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.open .hamburgerLine:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .hamburgerLine:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* ── Mobile menu drawer ───────────────────────────────────── */
+.mobileMenu {
+  display: none;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  background-color: var(--bg-surface);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-lg);
+  z-index: calc(var(--z-navbar) - 1);
+  padding: var(--space-4) var(--container-padding-x);
+  animation: fadeInUp var(--transition-base) ease both;
+}
+
+.mobileMenu.open {
+  display: block;
+}
+
+.mobileNavLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mobileNavLink {
+  display: block;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.mobileNavLink:hover,
+.mobileNavLink.active {
+  color: var(--color-brand-primary);
+  background-color: var(--color-brand-accent);
+}
+
+.mobileCta {
+  margin-top: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--border-color);
+}
+
+/* ── Responsive — show hamburger, hide desktop links ─────── */
+@media (max-width: 768px) {
+  /* Hide the desktop <ul> nav link list */
+  .navLinks {
+    display: none;
+  }
+
+  /* Show hamburger button */
+  .hamburger {
+    display: flex;
+  }
+
+  /* Hide desktop CTA button — it appears inside the mobile drawer instead */
+  .navCta {
+    display: none;
+  }
+
+  .logoTagline {
+    display: none;
+  }
+}

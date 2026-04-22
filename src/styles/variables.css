@@ -1,0 +1,100 @@
+/* ============================================================
+   DESIGN TOKENS — Single source of truth for all visual values.
+   Every component references these vars. Never hardcode colors,
+   spacing, or font sizes directly in component CSS.
+   ============================================================ */
+
+:root {
+  /* ── Brand Colors ─────────────────────────────────────────── */
+  --color-brand-primary:    #1a4c2e;   /* Deep construction green */
+  --color-brand-secondary:  #c8922a;   /* Warm amber / gold */
+  --color-brand-accent:     #e8f4ed;   /* Light green tint (backgrounds) */
+
+  /* ── Status / Semantic ────────────────────────────────────── */
+  --color-success:          #2e7d50;   /* Completed projects (green) */
+  --color-warning:          #0992c9;   /* Ongoing projects (Blue) */
+  --color-pending:          #ca8a04;   /* Pipeline projects (yellow) */
+  --color-error:            #dc2626;
+
+  /* ── Backgrounds ──────────────────────────────────────────── */
+  --bg-page:                #f9f8f5;
+  --bg-surface:             #ffffff;
+  --bg-surface-alt:         #f1ede6;
+  --bg-overlay:             rgba(0, 0, 0, 0.55);
+
+  /* ── Text ─────────────────────────────────────────────────── */
+  --text-primary:           #1a1a1a;
+  --text-secondary:         #555550;
+  --text-muted:             #8a8a82;
+  --text-inverse:           #ffffff;
+  --text-on-brand:          #ffffff;
+
+  /* ── Borders ──────────────────────────────────────────────── */
+  --border-color:           #ddd8ce;
+  --border-radius-sm:       4px;
+  --border-radius-md:       8px;
+  --border-radius-lg:       16px;
+  --border-radius-xl:       24px;
+  --border-radius-pill:     9999px;
+
+  /* ── Spacing (8-point grid) ───────────────────────────────── */
+  --space-1:    4px;
+  --space-2:    8px;
+  --space-3:    12px;
+  --space-4:    16px;
+  --space-5:    20px;
+  --space-6:    24px;
+  --space-8:    32px;
+  --space-10:   40px;
+  --space-12:   48px;
+  --space-16:   64px;
+  --space-20:   80px;
+  --space-24:   96px;
+
+  /* ── Typography ───────────────────────────────────────────── */
+  --font-sans:        'Inter', system-ui, -apple-system, sans-serif;
+  --font-size-xs:     0.75rem;    /* 12px */
+  --font-size-sm:     0.875rem;   /* 14px */
+  --font-size-base:   1rem;       /* 16px */
+  --font-size-lg:     1.125rem;   /* 18px */
+  --font-size-xl:     1.25rem;    /* 20px */
+  --font-size-2xl:    1.5rem;     /* 24px */
+  --font-size-3xl:    1.875rem;   /* 30px */
+  --font-size-4xl:    2.25rem;    /* 36px */
+  --font-size-5xl:    3rem;       /* 48px */
+  --font-size-6xl:    3.75rem;    /* 60px */
+
+  --font-weight-normal:    400;
+  --font-weight-medium:    500;
+  --font-weight-semibold:  600;
+  --font-weight-bold:      700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight:  1.2;
+  --line-height-snug:   1.4;
+  --line-height-base:   1.6;
+  --line-height-loose:  1.8;
+
+  /* ── Shadows ──────────────────────────────────────────────── */
+  --shadow-sm:    0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow-md:    0 4px 12px rgba(0, 0, 0, 0.10);
+  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.14);
+  --shadow-hover: 0 8px 24px rgba(26, 76, 46, 0.18);
+
+  /* ── Layout ───────────────────────────────────────────────── */
+  --navbar-height:          72px;
+  --max-content-width:      1200px;
+  --section-padding-y:      var(--space-20);
+  --container-padding-x:    var(--space-6);
+
+  /* ── Transitions ──────────────────────────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* ── Z-index layers ───────────────────────────────────────── */
+  --z-base:    1;
+  --z-overlay: 50;
+  --z-navbar:  100;
+  --z-modal:   200;
+}

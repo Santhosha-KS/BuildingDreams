@@ -1,0 +1,135 @@
+.hero {
+  position: relative;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* Dark overlay controlled by overlayOpacity from hero.json */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: var(--bg-overlay);
+  z-index: var(--z-base);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  padding: var(--space-20) var(--container-padding-x);
+  animation: fadeInUp 0.6s ease both;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-brand-secondary);
+  margin-bottom: var(--space-4);
+}
+
+.eyebrow::before {
+  content: '';
+  display: block;
+  width: 32px;
+  height: 2px;
+  background-color: var(--color-brand-secondary);
+  border-radius: var(--border-radius-pill);
+}
+
+.title {
+  font-size: clamp(var(--font-size-4xl), 6vw, var(--font-size-6xl));
+  font-weight: var(--font-weight-extrabold);
+  line-height: var(--line-height-tight);
+  color: #ffffff;
+  max-width: 700px;
+  margin-bottom: var(--space-6);
+}
+
+.subtitle {
+  font-size: var(--font-size-lg);
+  color: rgba(255, 255, 255, 0.85);
+  max-width: 560px;
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--space-8);
+}
+
+.ctaGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+/* Scroll indicator */
+.scrollHint {
+  position: absolute;
+  bottom: var(--space-6);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: var(--font-size-xs);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  z-index: 2;
+  animation: fadeIn 1s 1s ease both;
+}
+
+.scrollArrow {
+  width: 24px;
+  height: 24px;
+  border-right: 2px solid rgba(255, 255, 255, 0.4);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: rotate(45deg) translateY(0); }
+  50%       { transform: rotate(45deg) translateY(6px); }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
+  }
+
+  .content {
+    padding: var(--space-16) var(--container-padding-x);
+  }
+
+  .subtitle {
+    font-size: var(--font-size-base);
+  }
+
+  .ctaGroup {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Make both CTA buttons full-width on mobile */
+  .ctaGroup > * {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .scrollHint {
+    display: none;
+  }
+}

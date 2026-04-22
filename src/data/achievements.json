@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ach-1",
+    "label": "Years of Excellence",
+    "value": 19,
+    "suffix": "+"
+  },
+  {
+    "id": "ach-2",
+    "label": "Happy Families",
+    "value": 850,
+    "suffix": "+"
+  },
+  {
+    "id": "ach-3",
+    "label": "Projects Delivered",
+    "value": 148,
+    "suffix": ""
+  },
+  {
+    "id": "ach-4",
+    "label": "Cities Covered",
+    "value": 6,
+    "suffix": ""
+  },
+  {
+    "id": "ach-5",
+    "label": "Sq. Ft. Constructed",
+    "value": 2,
+    "suffix": "M+"
+  },
+  {
+    "id": "ach-6",
+    "label": "Industry Awards",
+    "value": 12,
+    "suffix": ""
+  }
+]

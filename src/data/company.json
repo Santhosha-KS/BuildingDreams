@@ -1,0 +1,35 @@
+{
+  "name": "Santhosha Homes",
+  "tagline": "Building Dreams, Crafting Legacies",
+  "logoText": "SH",
+  "address": {
+    "street": "42, MG Road, Brigade Road",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "pincode": "560001"
+  },
+  "phone": "+91-98765-43210",
+  "email": "info@santhosha-homes.com",
+  "socialLinks": [
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com",
+      "label": "Facebook"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com",
+      "label": "Instagram"
+    },
+    {
+      "platform": "linkedin",
+      "url": "https://linkedin.com",
+      "label": "LinkedIn"
+    },
+    {
+      "platform": "youtube",
+      "url": "https://youtube.com",
+      "label": "YouTube"
+    }
+  ]
+}

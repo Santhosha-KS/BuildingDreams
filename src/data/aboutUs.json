@@ -1,0 +1,29 @@
+{
+  "heading": "About Santhosha Homes",
+  "story": "Founded in 2005 in the heart of Bengaluru, Santhosha Homes began with a simple belief: every family deserves a home built with integrity, craftsmanship, and care. What started as a small team of passionate builders has grown into one of Karnataka's most trusted residential developers, with over 148 completed projects and 850+ happy families calling our homes their own. We have consistently set new benchmarks in construction quality, design innovation, and customer transparency—earning the trust of homebuyers across Bengaluru, Mysuru, Mangaluru, and beyond.",
+  "mission": "To deliver thoughtfully designed, high-quality homes that stand the test of time—on schedule, within budget, and beyond expectations.",
+  "vision": "To be South India's most admired home construction company, known for integrity, innovation, and homes that become the backdrop of life's greatest moments.",
+  "foundedYear": 2005,
+  "teamMembers": [
+    {
+      "id": "tm-1",
+      "name": "Santhosha K S",
+      "title": "Founder & Managing Director"
+    },
+    {
+      "id": "tm-2",
+      "name": "Priya Nair",
+      "title": "Chief Architect"
+    },
+    {
+      "id": "tm-3",
+      "name": "Rajesh Menon",
+      "title": "Head of Project Delivery"
+    },
+    {
+      "id": "tm-4",
+      "name": "Deepa Krishnan",
+      "title": "Customer Relations Manager"
+    }
+  ]
+}

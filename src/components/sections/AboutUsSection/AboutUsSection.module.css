@@ -1,0 +1,201 @@
+.section {
+  background-color: var(--bg-page);
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-12);
+  align-items: center;
+}
+
+/* Text column */
+.textCol {
+  flex: 1 1 480px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-brand-secondary);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--text-primary);
+  margin-bottom: var(--space-6);
+  line-height: var(--line-height-tight);
+}
+
+.story {
+  font-size: var(--font-size-base);
+  color: var(--text-secondary);
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--space-8);
+}
+
+.mvGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  margin-bottom: var(--space-8);
+}
+
+.mvItem {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+}
+
+.mvIcon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  flex-shrink: 0;
+}
+
+.mvTitle {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-brand-primary);
+  margin-bottom: var(--space-1);
+}
+
+.mvText {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: var(--line-height-base);
+}
+
+/* Image column */
+.imageCol {
+  flex: 1 1 380px;
+  position: relative;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  background: linear-gradient(135deg, var(--color-brand-primary) 0%, var(--color-brand-secondary) 100%);
+  border-radius: var(--border-radius-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  font-size: var(--font-size-6xl);
+}
+
+.imagePlaceholderLabel {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: rgba(255,255,255,0.7);
+  margin-top: var(--space-3);
+}
+
+/* Founded badge */
+.foundedBadge {
+  position: absolute;
+  bottom: var(--space-6);
+  left: -var(--space-6);
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-4) var(--space-5);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateX(-20px);
+}
+
+.foundedYear {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-extrabold);
+  color: var(--color-brand-primary);
+  line-height: 1;
+}
+
+.foundedLabel {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* Team members */
+.teamGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--border-color);
+}
+
+.teamMember {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-pill);
+  background-color: var(--color-brand-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-brand-primary);
+  flex-shrink: 0;
+}
+
+.memberInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.memberName {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.memberTitle {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .imageCol {
+    order: -1;
+  }
+
+  .imagePlaceholder {
+    aspect-ratio: 16 / 9;
+  }
+
+  .foundedBadge {
+    transform: none;
+    bottom: var(--space-4);
+    left: var(--space-4);
+  }
+
+  .title {
+    font-size: var(--font-size-3xl);
+  }
+}
