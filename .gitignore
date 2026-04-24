@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Personal reference files
+DEVELOPMENT_TRACKER.md
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
