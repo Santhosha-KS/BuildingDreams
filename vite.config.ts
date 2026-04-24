@@ -5,6 +5,7 @@ import { resolve } from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: '/BuildingDreams/',
   resolve: {
     // @/* maps to src/* — avoids deep relative import chains like ../../../services/
     alias: { '@': resolve(__dirname, 'src') },
