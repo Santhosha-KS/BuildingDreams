@@ -24,7 +24,7 @@ function App() {
   return (
     // ThemeProvider must be outermost — ThemeContext must be available to Navbar
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         {/* Handles /#hash smooth-scroll on every route change */}
         <ScrollToHash />
         <PageLayout>
